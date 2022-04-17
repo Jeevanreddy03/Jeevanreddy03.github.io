@@ -7,17 +7,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
     <link rel="stylesheet" href="./styles.css">
   </head>
-  
-<!--JS for hourly rate-->
-<script type="text/javascript">
-  function getValue(radio) {
-    if (radio.value == 'hiring') {
-      document.getElementById("hourly_rate").style.display = "block";
-    } else {
-      document.getElementById("hourly_rate").style.display = "none";
-    }
-  }
-</script>
 
 <!--body of the page-->
   <body>
@@ -161,6 +150,10 @@
 				  <input type="text" class="form-control" name="contact_address" id="contact_address" required/>
 				</div>
 				<div class="form-group">
+				  <label for="postalcode"><span>*</span> Postal Code: </label>
+				  <input type="text" class="form-control" name="postalcode" id="postalcode" required/>
+				</div>
+				<div class="form-group">
 				  <label for="city"><span>*</span>Choose your city from the drop-down list:</label>
 				  <input list="cities" id="city" name="city" required/>
 				  <datalist id="cities">
@@ -218,4 +211,27 @@
 
     </main>
   </body>
+
+<!--JS for PostalCode and hourly rate-->
+<script type="text/javascript">
+  
+	function getValue(radio) {
+	  if (radio.value == 'hiring') {
+		document.getElementById("hourly_rate").style.display = "block";
+	  } else {
+		document.getElementById("hourly_rate").style.display = "none";
+	  }
+	}
+  
+	  function testPostalCode()
+	  {
+		  const postalCode = new RegExp(/^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$/i);
+		  if(!postalCode.test(document.getElementById(postalcode).value))
+		  {
+			alert("Invalid Postal Code");
+		  }
+	  }
+  
+  </script>
+
 </html>

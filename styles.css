@@ -18,7 +18,7 @@ h3{
 	font-family: "Comic Sans MS", Comic Sans;
     text-align: center;
 	background: #fa9500;
-	font-size:50px;
+	font-size:70px;
 	padding: 0;
 	color: white;
 	margin: 0;
@@ -191,3 +191,202 @@ footer {
     margin: auto 0;
     text-align: center;
 }
+
+
+
+@media only screen and (max-width: 400px) {
+  body {
+    margin: 0;
+    padding: 0;
+    height: auto;
+  }
+  
+  h3{
+      color: #fa9500;
+  }
+  
+  .intro {
+    background: #fa9500;
+  }
+  
+  .title h1{
+    font-family: "Comic Sans MS", Comic Sans;
+      text-align: center;
+    background: #fa9500;
+    font-size:40px;
+    padding: 0;
+    color: white;
+    margin: 0;
+  }
+  
+  .title h4{
+      text-align: center;
+    background: #fa9500;
+    font-size:20px;
+    color: white;
+  }
+  
+  .menu_box{
+    display: inline-block;
+    background: #B7E4C7;
+    width: 15%;
+    height: 50px;
+    justify-content: center;
+    padding: 3% 3%;
+    margin: 0 auto;
+    color: white;
+  }
+  
+  menu{
+    color: white;
+  }
+  
+  .MoreaboutMe{
+    display: flex;
+      margin: right 0;
+    grid-template-columns: auto;
+    background: #D8F3DC;
+    display:inline-block;
+    width: 50%;
+    padding:0px;
+    margin:0px
+  }
+  
+  .Personal-Intro{
+    background: #D8F3DC;
+  }
+  
+  .leftbox{
+    width: 50%;
+    height: auto;
+    float: left;
+    text-align: left;
+  }
+  
+  .righttbox{
+    width: 50%;
+    height: auto;
+    float: right;
+    text-align: right;
+  }
+  
+  .mypic{
+      background-size: cover;
+      margin-left: 20px;
+      margin-top: 10px;
+      display: inline-block;
+  }
+  .mypic img {
+      position: relative;
+      height: 30px;
+  }
+  
+  .AcademicIntegirty{
+    background: #D8F3DC;
+  }
+    
+  .content{
+    width: 50%;
+  }
+  
+  /* Education
+  ------------------------------------*/
+  .divstyle {
+    background: #95D5B2;
+    width: 100%;
+  }
+  
+  .education .content {
+    padding: 5% 3%;
+    background-color: #D8F3DC;
+  }
+  
+  .education .education-year {
+    background-color: #95D5B2;
+    color: #D8F3DC;
+    text-align: center;
+    padding: 20px;
+  
+  }
+  
+  .education{
+    background: #D8F3DC;
+    grid-template-columns: auto;
+    margin: 0;
+    background-size: cover;
+    width: 100%;
+  }
+  
+  .contact {
+      background-color: #95D5B2;
+      margin: 50px 20px 50px 20px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      /* width: 80%; */
+      height: auto;
+      position: relative;
+    }
+    .contact_form {
+      padding: 25px;
+      width: 70%;
+      margin-left: 15%;
+    }
+    .contact p {
+      margin-bottom: 10px;
+      font-size: 15px;
+    }
+    .contact span {
+      color: red;
+    }
+  
+    input,
+    textarea {
+      margin-bottom: 20px;
+      position: relative;
+      display: flex;
+      border: 1px solid #dee7ec;
+      width: 100px;
+      padding: 4px;
+      font-size: 10px;
+      font-family: "Roboto Slab", serif;
+    }
+    
+    .radio-buttons label{
+      vertical-align: middle;
+    }
+    
+    .radio-buttons input[type="radio"]{
+      vertical-align: middle;
+    }
+  
+    .submit-button {
+      background-color: #eb6424;
+      font-weight: bold;
+      width: 50px;
+      font-size: 1em;
+      box-shadow: 5px 5px 4px;
+    }
+  
+  
+  footer {
+    background: #fa9500;
+      height: auto;
+      width: 100%;
+  }
+    
+  .footer-group {
+      font-size: 20px;
+      margin: auto 0;
+      text-align: center;
+  }
+    
+  .footer-group p {
+      font-size: 20px;
+      margin: auto 0;
+      text-align: center;
+  }
+  
+  }
+
+  
